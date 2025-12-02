@@ -1,3 +1,5 @@
+import { toText } from "@std/streams";
+
 import fetchInput from "./tools/fetch_input.ts";
 import { debug, getDayFilePath } from "../util.ts";
 import type { DayModule, RunOptions } from "../types.ts";
@@ -51,10 +53,7 @@ async function getInput(
   let input: string;
   if (inputFlag === "-") {
     debug("Reading input from stdin");
-    const { stdin, readAllSync } = Deno;
-    const inputData = readAllSync(stdin);
-    const decoder = new TextDecoder();
-    input = decoder.decode(inputData);
+    input = await toText(Deno.stdin.readable);
   } else if (existsSync(inputFile)) {
     debug(`Reading input from ${inputFile}`);
     input = Deno.readTextFileSync(inputFile);

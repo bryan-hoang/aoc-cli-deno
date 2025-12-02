@@ -3,6 +3,7 @@ import fetchInput from "./fetch_input.ts";
 
 Deno.test({
   name: "getInput returns the input as a string",
+  ignore: !Deno.env.has("AOC_SESSION"),
   fn: async () => {
     const input = await fetchInput(
       { year: 2015, day: 1 },

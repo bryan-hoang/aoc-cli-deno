@@ -1,4 +1,0 @@
-scripts:
-  lint: deno lint --unstable
-  format: deno fmt --unstable
-  test: deno test --unstable -A

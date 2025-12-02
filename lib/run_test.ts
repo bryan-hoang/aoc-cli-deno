@@ -1,9 +1,9 @@
-import { assert } from "../dev_deps.ts";
 import { RunOptions } from "../types.ts";
 import run from "./run.ts";
 
 Deno.test({
   name: "run",
+  ignore: !Deno.env.has("AOC_SESSION"),
   fn: async () => {
     const day = 1;
     const part = 1;

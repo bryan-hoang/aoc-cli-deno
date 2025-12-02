@@ -3,6 +3,7 @@ import init from "../lib/init.ts";
 
 Deno.test({
   name: "init",
+  ignore: !Deno.env.has("AOC_SESSION"),
   fn: async () => {
     const day = 1;
     const commonInitConfig = {

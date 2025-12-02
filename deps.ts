@@ -1,11 +1,11 @@
 // Standard Library
-export * as path from "https://deno.land/std/path/mod.ts";
-export { ensureFileSync, existsSync } from "https://deno.land/std/fs/mod.ts";
+export * as path from "@std/path";
+export { ensureFileSync, existsSync } from "@std/fs";
 
 // Third Party Modules
-export { debug } from "https://deno.land/x/debug/mod.ts";
-export { config } from "https://deno.land/x/dotenv/mod.ts";
+export { debug } from "debug";
+export { config } from "dotenv";
 export {
   Command,
   HelpCommand,
-} from "https://deno.land/x/cliffy/command/mod.ts";
+} from "https://deno.land/x/cliffy@v0.25.7/command/mod.ts";

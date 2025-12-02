@@ -18,6 +18,6 @@
         "--unstable"
       ],
       "attachSimplePort": 9229
-    },
+    }
   ]
 }
