@@ -6,7 +6,7 @@
     "@std/assert": "jsr:@std/assert",
     "@std/fs": "jsr:@std/fs",
     "@std/path": "jsr:@std/path",
-    "@std/streams": "jsr:@std/streams@^1.0.14",
+    "@std/streams": "jsr:@std/streams@^1.1.0",
     "cliffy": "https://deno.land/x/cliffy@v0.25.7/command/mod.ts",
     "debug": "https://deno.land/x/debug/mod.ts",
     "dotenv": "https://deno.land/x/dotenv/mod.ts"
