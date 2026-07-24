@@ -7,7 +7,7 @@
     "jsr:@std/internal@^1.0.12": "1.0.13",
     "jsr:@std/path@*": "1.1.4",
     "jsr:@std/path@^1.1.4": "1.1.4",
-    "jsr:@std/streams@1.1.0": "1.1.0"
+    "jsr:@std/streams@1.1.1": "1.1.1"
   },
   "jsr": {
     "@std/assert@1.0.19": {
@@ -35,8 +35,8 @@
         "jsr:@std/internal"
       ]
     },
-    "@std/streams@1.1.0": {
-      "integrity": "2f7024d841f343fd478afe0c958a3f0f068ef2a0d2bcc954f550f97ac1fa22e3",
+    "@std/streams@1.1.1": {
+      "integrity": "92556d350e537e9dce527a6d08f6f15be3ff65e656079dea69d15252187c7613",
       "dependencies": [
         "jsr:@std/bytes"
       ]
@@ -120,7 +120,7 @@
       "jsr:@std/assert@*",
       "jsr:@std/fs@*",
       "jsr:@std/path@*",
-      "jsr:@std/streams@1.1.0"
+      "jsr:@std/streams@1.1.1"
     ]
   }
 }
